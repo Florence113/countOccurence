@@ -9,15 +9,32 @@ def read_file_content(filename):
     with open ("story.txt", "r") as f:
         lines = f.read().lower()
         print (lines)
-        split_lines = lines.split()
-        print(split_lines)
+#         split_lines = lines.split()
+#         print(split_lines)
         
-        count = {}
+#         count = {}
+#     for text in split_lines:
+#         if text in count:
+#             count[text] += 1
+#         else:
+#             count[text] = 1
+#     print (count)
+
+# read_file_content('story.txt')        
+
+def count_words():
+    word = read_file_content('story.txt')
+    # # [assignment] Add your code here
+    print(word)
+    split_lines = text.split()
+    print(split_lines)
+    count = {}
     for text in split_lines:
         if text in count:
             count[text] += 1
         else:
             count[text] = 1
-    print (count)
+    return count   
 
-read_file_content('story.txt')        
+count_words()
+
